@@ -1,9 +1,10 @@
-import LeftBar from "../leftBar";
+import LeftBar from "../component/leftBar";
 
 export default function Setting() {
   return (
-    <div>
+    <div className="flex flex-row bg-gray-100 ">
       <LeftBar />
+      <div style={{ width: "83vw" }}></div>
     </div>
   );
 }

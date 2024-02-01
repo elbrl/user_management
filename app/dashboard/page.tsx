@@ -2,7 +2,7 @@ import FooterDashboard from "../component/FooterDashboard";
 import Header from "../component/Header";
 import ListUser from "../component/ListUser";
 import Search from "../component/Search";
-import LeftBar from "../leftBar";
+import LeftBar from "../component/leftBar";
 
 export default function Dashboard() {
   return (

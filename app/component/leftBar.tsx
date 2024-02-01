@@ -1,9 +1,8 @@
 "use client";
-import Image from "next/image";
-import Link from "next/link";
+import { usePathname, useRouter } from "next/navigation";
 import { icons } from "./iconsData";
-import { usePathname } from "next/navigation";
-import { useRouter } from "next/navigation";
+import Link from "next/link";
+import Image from "next/image";
 
 export default function LeftBar() {
   const router = useRouter();

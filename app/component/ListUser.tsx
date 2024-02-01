@@ -6,7 +6,7 @@ export default function ListUser() {
     <div className="mx-8 text-black">
       <div
         style={{ height: "61vh" }}
-        className=" mt-8 rounded-2xl mt- bg-white w-full "
+        className=" mt-8 rounded-2xl bg-white w-full "
       >
         <div className="h-16 flex items-center">
           <div className="m-6">List Users</div>
@@ -19,12 +19,12 @@ export default function ListUser() {
             <div className="w-1/12">Action</div>
           </div>
         </div>
-        {users.map(({ name, mail, status, date, role, index }) => (
+        {users.map(({ name, mail, status, date, role }) => (
           <div>
             <div className="flex justify-center">
               <div
                 style={{ height: 1 }}
-                className="w-full  bg-slate-100 mx-4"
+                className="w-full bg-slate-100 mx-4"
               ></div>
             </div>
             <div className="flex flex-row">

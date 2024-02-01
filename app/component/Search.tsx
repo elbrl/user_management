@@ -1,15 +1,25 @@
 "use client";
 import Image from "next/image";
+import { usePathname, useRouter } from "next/navigation";
 import { Fragment, useState } from "react";
 import Modal from "./Modal";
+import { icons } from "./iconsData";
+import { ger } from "./HomeData";
 
 export default function Search() {
   const [showModal, setShowModal] = useState(false);
+  const router = useRouter();
+  const pathname = usePathname();
   return (
     <Fragment>
       <div className="mx-8 ">
         <div className="h-12 ml-4 text-2xl font-bold text-blue-500">
-          Users Dashboard
+          {ger.map(({ title }) => (
+            <div>{pathname === "/" ? <div>{title}</div> : <div></div>}</div>
+          ))}
+          {icons.map(({ link, title }) => (
+            <div>{pathname === link ? <div>{title}</div> : <div></div>}</div>
+          ))}
         </div>
         <div className="flex flex-row justify-between">
           <div className="flex flex-row bg-white w-8/12 rounded-2xl">

@@ -1,4 +1,6 @@
-import { NextPage } from "next";
+"use client";
+
+import ModalContent from "./ModalContent";
 
 export default function Modal({ isVisible, onClose }) {
   if (!isVisible) return null;
@@ -9,19 +11,12 @@ export default function Modal({ isVisible, onClose }) {
 
   return (
     <div
-      className="fixed inset-0 bg-black bg-opacity-25 backdrop-blur-sm flex justify-center items-center text-black"
+      className="fixed inset-0 bg-black bg-opacity-30 flex justify-center items-center text-black"
       onClick={handleClose}
       id="wrapper"
     >
-      <div className="w-11/12">
-        <button onClick={() => onClose()} className="text-white text-xl">
-          x
-        </button>
-        <div className="bg-white rounded ">
-          mgvjhjhjghodal
-          <div>jiljiljil</div>
-          <input></input>
-        </div>
+      <div className="w-9/12 h-4/5 bg-white rounded-md ">
+        <ModalContent />
       </div>
     </div>
   );
