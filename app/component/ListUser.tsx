@@ -19,10 +19,7 @@ export default function ListUser() {
         {users.map(({ name, mail, status, date, role }) => (
           <div>
             <div className="flex justify-center">
-              <div
-                style={{ height: 1 }}
-                className="w-full bg-slate-100 mx-4"
-              ></div>
+              <div className="h-[1px] w-full bg-slate-100 mx-4"></div>
             </div>
             <div className="flex flex-row">
               <div className="h-16 flex items-center w-5/12 justify-between">
@@ -30,7 +27,13 @@ export default function ListUser() {
                   <div>{name}</div>
                   <div className="text-gray-400">{mail}</div>
                 </div>
-                <div className="w-32 bg-blue-500 h-8 rounded-lg text-white flex items-center justify-center">
+                <div
+                  className={`w-32  ${
+                    status === "Employee"
+                      ? "bg-slate-100 text-slate-400"
+                      : "bg-blue-500 text-white"
+                  } h-8 rounded-lg  flex items-center justify-center`}
+                >
                   {status}
                 </div>
               </div>
