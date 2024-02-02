@@ -65,3 +65,10 @@ export const icons = [
     index: 8,
   },
 ];
+export const documentsIcon = [
+  { link: "first.svg" },
+  { link: "second.svg" },
+  { link: "third.svg" },
+  { link: "fourth.svg" },
+  { link: "fifth.svg" },
+];

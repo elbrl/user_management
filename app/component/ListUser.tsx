@@ -3,11 +3,8 @@ import { users } from "./UsersData";
 
 export default function ListUser() {
   return (
-    <div className="mx-8 text-black">
-      <div
-        style={{ height: "61vh" }}
-        className=" mt-8 rounded-2xl bg-white w-full "
-      >
+    <div className="mx-8 text-black h-[63.27vh]">
+      <div className="h-[61vh] mt-8 rounded-2xl bg-white w-full ">
         <div className="h-16 flex items-center">
           <div className="m-6">List Users</div>
         </div>

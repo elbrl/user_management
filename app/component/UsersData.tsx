@@ -4,7 +4,7 @@ export const users = [
     mail: "david@gmail.com",
     status: "Super Admin",
     date: "24 Otc, 2015",
-    role: "Lorem Ipsum",
+    role: "Lorem ipsum",
     index: 0,
   },
   {
@@ -12,7 +12,7 @@ export const users = [
     mail: "ina@gmail.com",
     status: "Admin",
     date: "24 Otc, 2015",
-    role: "Lorem Ipsum",
+    role: "Lorem ipsum",
     index: 1,
   },
   {
@@ -20,7 +20,7 @@ export const users = [
     mail: "harmon@gmail.com",
     status: "HR Admin",
     date: "18 Dec, 2015",
-    role: "Lorem Ipsum",
+    role: "Lorem ipsum",
     index: 2,
   },
   {
@@ -28,7 +28,7 @@ export const users = [
     mail: "lena@gmail.com",
     status: "Employee",
     date: "8 Otc, 2016",
-    role: "Lorem Ipsum",
+    role: "Lorem ipsum",
     index: 3,
   },
   {
@@ -36,7 +36,7 @@ export const users = [
     mail: "eula@gmail.com",
     status: "Super Admin",
     date: "15 Jun, 2017",
-    role: "Lorem Ipsum",
+    role: "Lorem ipsum",
     index: 4,
   },
   {
@@ -44,7 +44,7 @@ export const users = [
     mail: "victoria@gmail.com",
     status: "HR Admin",
     date: "12 Jan, 2019",
-    role: "Lorem Ipsum",
+    role: "Lorem ipsum",
     index: 5,
   },
   {
@@ -52,7 +52,37 @@ export const users = [
     mail: "cora@gmail.com",
     status: "Employee",
     date: "21 July, 2020",
-    role: "Lorem Ipsum",
+    role: "Lorem ipsum",
     index: 6,
+  },
+];
+export const users2 = [
+  {
+    name: "Victoria Perez",
+    userId: "LA-0234",
+    date: "30 Apr, 2017 to 24 Otc 2020",
+    role: "Lorem ipsum",
+    index: 0,
+  },
+  {
+    name: "Ina Hogan",
+    userId: "LA-0234",
+    date: "24 Otc, 2015",
+    role: "Lorem ipsum",
+    index: 1,
+  },
+  {
+    name: "David Harmon",
+    userId: "LA-0234",
+    date: "18 Dec, 2015",
+    role: "Lorem ipsum",
+    index: 2,
+  },
+  {
+    name: "Lena Page",
+    userId: "LA-0234",
+    date: "8 Otc, 2016",
+    role: "Lorem ipsum",
+    index: 3,
   },
 ];

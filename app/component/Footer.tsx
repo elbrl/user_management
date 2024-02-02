@@ -1,11 +1,11 @@
 "use client";
 import Image from "next/image";
 
-export default function FooterDashboard() {
+export default function Footer() {
   return (
-    <div className=" w-full flex ">
+    <div className=" w-full">
       <div className="w-full h-24 flex justify-center items-end">
-        <div className="h-8 w-2/5 text-gray-500 flex justify-between">
+        <div className="h-8 w-2/5 text-gray-500 flex justify-between items-center text-xs">
           <div>Items per page:</div>
           <div>
             <div className="flex flex-row items-center justify-between">
@@ -19,17 +19,17 @@ export default function FooterDashboard() {
             </div>
           </div>
           <div>1-4 of 10</div>
-          <div className="w-28 flex justify-between">
+          <div className="w-20 flex justify-between">
             <Image
               src={"/leftArrowDisable.svg"}
-              width={24}
-              height={24}
+              width={16}
+              height={16}
               alt="ArrowLeft"
             />
             <Image
               src={"/rightArrowDisable.svg"}
-              width={24}
-              height={24}
+              width={16}
+              height={16}
               alt="ArrowRight"
             />
           </div>
