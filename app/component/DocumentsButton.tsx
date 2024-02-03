@@ -14,7 +14,7 @@ export default function DocumentsButton() {
         </div>
         <div className="flex flex-row w-[32%] justify-between">
           <div className="border border-gray-300 w-48 h-10 rounded flex justify-around items-center">
-            <div>This Month</div>
+            <div className="font-light text-gray-600">This Month</div>
             <Image
               src={"dropdown_big.svg"}
               width={12}
@@ -23,7 +23,7 @@ export default function DocumentsButton() {
             />
           </div>
           <div className="border border-gray-300 w-48 h-10 rounded flex justify-around items-center">
-            <div>Documents</div>
+            <div className="font-light text-gray-600">Documents</div>
             <Image
               src={"dropdown_big.svg"}
               width={12}

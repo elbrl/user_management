@@ -16,7 +16,7 @@ export default function ListUser() {
             <div className="w-1/12">Action</div>
           </div>
         </div>
-        {users.map(({ name, mail, status, date, role }) => (
+        {users.map(({ name, mail, status, date, role, index }) => (
           <div>
             <div className="flex justify-center">
               <div className="h-[1px] w-full bg-slate-100 mx-4"></div>

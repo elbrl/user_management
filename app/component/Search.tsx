@@ -10,6 +10,9 @@ export default function Search() {
   const [showModal, setShowModal] = useState(false);
   const router = useRouter();
   const pathname = usePathname();
+  // const [query, setQuery] = useState();
+  // console.log(query);
+
   return (
     <Fragment>
       <div className="mx-8 ">
@@ -42,6 +45,7 @@ export default function Search() {
               ></input>
             ) : (
               <input
+                // onChange={(e) => setQuery(e.target.value)}
                 className="h-12 w-full rounded-r-2xl outline-none text-black"
                 placeholder="Search"
                 name="Input"
