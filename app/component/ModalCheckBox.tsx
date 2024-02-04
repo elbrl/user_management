@@ -2,7 +2,7 @@ import { users } from "./UsersData";
 
 export default function ModalCheckBox() {
   return (
-    <div className="max-h-80 overflow-y-auto">
+    <div className="tg:max-h-60 2xl:max-h-80 overflow-y-auto">
       {users.map(({ status }) => (
         <div>
           <div className="h-16 flex flex-row justify-between items-center text-sm">

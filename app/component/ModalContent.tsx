@@ -12,7 +12,7 @@ export default function ModalContent() {
         <div>Add User</div>
         <Image src={"close.svg"} width={24} height={24} alt="honh" />
       </div>
-      <div style={{ height: 1 }} className="w-full bg-slate-100 "></div>
+      <div className="h-[1px] w-full bg-slate-100 "></div>
       <ModalInput />
       <div className="h-16 bg-slate-100 flex flex-row justify-between items-center text-slate-400">
         <div className="flex justify-between w-5/12 ml-8">

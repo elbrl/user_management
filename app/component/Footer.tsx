@@ -3,9 +3,9 @@ import Image from "next/image";
 
 export default function Footer() {
   return (
-    <div className=" w-full">
-      <div className="w-full h-24 flex justify-center items-end">
-        <div className="h-8 w-2/5 text-gray-500 flex justify-between items-center text-xs">
+    <div className="w-full">
+      <div className="w-full h-32 flex justify-center items-end">
+        <div className="h-8   w-[400px] text-gray-500 flex justify-between items-center text-xs">
           <div>Items per page:</div>
           <div>
             <div className="flex flex-row items-center justify-between">

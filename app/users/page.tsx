@@ -9,12 +9,14 @@ export default function Users() {
   return (
     <div className="flex flex-row bg-[#f5f5f5] ">
       <LeftBar />
-      <div style={{ width: "83vw" }}>
+      <div className="w-[83vw] ">
         <Header />
         <Search />
         <UsersCardMap />
         <ListUser2 />
-        <Footer />
+        <div className="flex flex-end">
+          <Footer />
+        </div>
       </div>
     </div>
   );
