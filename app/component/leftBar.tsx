@@ -26,7 +26,7 @@ export default function LeftBar() {
                 style={name === "Message" ? { paddingTop: "30px" } : {}}
                 href={link}
               >
-                <div className="flex justify-between text-gray-500 h-10 items-center">
+                <div className="flex justify-between text-gray-500 hover:text-blue-500 h-10 items-center">
                   <div className="flex flex-row tg:place-content-center lg:place-content-between w-full">
                     <div className="flex flex-row ">
                       <Image
@@ -47,7 +47,7 @@ export default function LeftBar() {
                     </div>
                   </div>
                   {pathname === link ? (
-                    <div className="h-full w-1 bg-blue-500"></div>
+                    <div className="h-full w-1 bg-blue-500 "></div>
                   ) : (
                     <div></div>
                   )}
