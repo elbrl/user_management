@@ -1,4 +1,3 @@
-import Footer from "../component/Footer";
 import Header from "../component/Header";
 import ListUser2 from "../component/ListUser2";
 import Search from "../component/Search";
@@ -14,9 +13,6 @@ export default function Users() {
         <Search />
         <UsersCardMap />
         <ListUser2 />
-        <div className="flex flex-end">
-          <Footer />
-        </div>
       </div>
     </div>
   );

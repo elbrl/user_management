@@ -14,7 +14,7 @@ export default function Search() {
   return (
     <Fragment>
       <div className="mx-8 ">
-        <div className="h-12 ml-4 tg:text-lg sm:text-2xl font-bold text-blue-500">
+        <div className="h-12 ml-4 tg:text-lg sm:text-2xl font-semibold text-blue-500">
           {ger.map(({ title }) => (
             <div>{pathname === "/" ? <div>{title}</div> : <div></div>}</div>
           ))}
@@ -26,26 +26,26 @@ export default function Search() {
           <div
             className={`flex flex-row bg-white rounded-2xl  ${
               pathname === "/documents"
-                ? "xs:w-[50vw] md:w-[40vw] lg:w-[50vw] xl:w-[50vw] 2xl:w-[65vw]"
-                : "xs:w-[40vw] md:w-[30vw] lg:w-[35vw] xl:w-[40vw] 2xl:w-[50vw]"
+                ? "h-11 xs:w-[50vw] md:w-[40vw] lg:w-[50vw] xl:w-[50vw] 2xl:w-[65vw]"
+                : "xs:w-[50vw] md:w-[30vw] lg:w-[35vw] xl:w-[45vw] 2xl:w-[50vw]"
             } `}
           >
             <Image
-              className="m-3"
+              className="mx-5"
               src={"/search.svg"}
-              width={17}
-              height={17}
+              width={15}
+              height={15}
               alt="Search"
             />
             {pathname === "/documents" ? (
               <input
-                className="h-12 w-full rounded-r-2xl outline-none text-black"
+                className="h-11 w-full rounded-r-2xl outline-none placeholder-[#404040] font-light"
                 placeholder="Search document"
                 name="Input"
               ></input>
             ) : (
               <input
-                className="h-12 w-full rounded-r-2xl outline-none text-black"
+                className="h-12 w-full rounded-r-2xl outline-none placeholder-[#404040] font-light"
                 placeholder="Search"
                 name="Input"
               ></input>
@@ -64,21 +64,23 @@ export default function Search() {
 
           <div className="tg:hidden md:inline">
             <div className="flex flex-row items-center ">
-              <div className="flex flex-row text-black">
-                <div>Sort by</div>
-                <Image
-                  className="m-3"
-                  src={"/dropdown.svg"}
-                  width={10}
-                  height={10}
-                  alt="dropdown"
-                />
+              <div className="tg:hidden lg:inline">
+                <div className="flex flex-row text-[#404040] mr-3">
+                  <div>Sort by</div>
+                  <Image
+                    className="m-3"
+                    src={"/dropdown.svg"}
+                    width={10}
+                    height={10}
+                    alt="dropdown"
+                  />
+                </div>
               </div>
               {pathname === "/documents" ? (
                 <div></div>
               ) : (
-                <div className="tg:hidden lg:inline">
-                  <div className="flex flex-row text-black ">
+                <div className="">
+                  <div className="flex flex-row text-[#404040] ">
                     <div>Saved search</div>
                     <Image
                       className="m-3"

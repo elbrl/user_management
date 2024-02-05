@@ -4,8 +4,8 @@ export default function Header() {
   return (
     <div className="w5/6 h-24 flex justify-between items-center tg:mx-5 sm:mx-12 text-black ">
       <div className="tg:hidden sm:inline">
-        <div>Hello, Boyusername</div>
-        <div className="text-xs text-gray-400">Have a nice day</div>
+        <div className="text-lg">Hello, Username</div>
+        <div className="text-xs text-gray-400 mt-[2px]">Have a nice day</div>
       </div>
       <div className="h-12 w-56 flex items-center justify-between">
         <Image
@@ -17,7 +17,7 @@ export default function Header() {
         />
         <div className=" tg:w-[0px] sm:w-[1px] h-full bg-gray-400"></div>
         <div className="h-10 w-10 bg-gray-400 rounded-full"></div>
-        <div>
+        <div className="">
           <div>Username</div>
           <div className="text-xs text-gray-400">Admin</div>
         </div>

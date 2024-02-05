@@ -1,4 +1,3 @@
-import FooterDashboard from "../component/Footer";
 import Header from "../component/Header";
 import ListUser from "../component/ListUser";
 import Search from "../component/Search";
@@ -12,7 +11,6 @@ export default function Dashboard() {
         <Header />
         <Search />
         <ListUser />
-        <FooterDashboard />
       </div>
     </div>
   );
