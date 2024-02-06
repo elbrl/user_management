@@ -41,7 +41,10 @@ export default function Modal({ isVisible, onClose }) {
             <button className="h-7 bg-[#0095FF] w-24 text-white rounded-lg">
               Add User
             </button>
-            <button className="h-7 w-28 text-gray-400 rounded-lg">
+            <button
+              onClick={onClose}
+              className="h-7 w-28 text-gray-400 rounded-lg"
+            >
               Cancel
             </button>
           </div>
